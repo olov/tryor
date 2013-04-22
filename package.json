@@ -1,6 +1,6 @@
 {
   "name": "tryor",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "return fn() or default value (in case of exception)",
   "main": "tryor.js",
   "repository": {
