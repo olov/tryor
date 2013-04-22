@@ -7,15 +7,17 @@ Works in node and browsers.
 
 ## Usage
 ```javascript
+    // do this
     var config = tryor(function() {
-        return JSON.parse(String(fs.readFileSync("config.json")));
+        return JSON.parse(userProvidedConfigString);
     }, {});
 
     // instead of
-    var config = {};
+    var config; // or var config = {}; and empty catch
     try {
-        config = JSON.parse(String(fs.readFileSync("config.json")));
+        config = JSON.parse(userProvidedConfigString);
     } catch (e) {
+        config = {};
     }
 ```
 
